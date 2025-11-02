@@ -96,7 +96,7 @@ export default function AgentPanel() {
       </div>
 
       {showModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-in fade-in duration-200">
+        <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-in fade-in duration-200">
           <div className="bg-terminal-bg border-2 border-emerald-500 rounded-xl shadow-[0_0_30px_rgba(16,185,129,0.3)] max-w-4xl w-full max-h-[85vh] flex flex-col animate-in zoom-in-95 duration-200">
             <div className="flex items-center justify-between p-4 border-b border-emerald-500/30 bg-black/50">
               <div className="flex items-center gap-2 text-emerald-400">
