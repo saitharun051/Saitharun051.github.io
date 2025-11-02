@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* subtle grid background */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: linear-gradient(var(--grid-color, rgba(255,255,255,0.03)) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-color, rgba(255,255,255,0.03)) 1px, transparent 1px);
+  background-size: 28px 28px, 28px 28px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+:root { --grid-color: rgba(60,247,154,0.08); }

@@ -1,0 +1,115 @@
+export const knowledge = [
+  {
+    id: 'about',
+    title: 'About Sai Tharun Reddy Mulka',
+    bullets: [
+      'Ph.D. Student in Computer Science (Security) at University of Texas at Dallas (Aug 2023 – May 2028 expected)',
+      'Member of S3 Lab (Software & Systems Security Lab) under advisor Prof. Chung Hwan Kim',
+      'Research focus: Physical-layer device authentication, agentic AI safety, and CPS fuzzing',
+      'Location: Richardson, TX',
+      'Email: sxm220351@utdallas.edu',
+      'Research interests: Hardware-assisted security, trustworthy autonomy, grounded AI control for robotics',
+    ],
+  },
+  {
+    id: 'education',
+    title: 'Education',
+    bullets: [
+      'Ph.D., Computer Science (Security) - University of Texas at Dallas (Aug 2023 – May 2028 expected). Advisor: Prof. Chung Hwan Kim, S3 Lab. Focus: physical-layer device authentication, agentic AI safety, CPS fuzzing.',
+      'M.S., Computer Science (Security) - University of Texas at Dallas (Aug 2023 – May 2025). Courses: Advanced OS, Systems Security & Binary Analysis, Machine Learning. Received Jonsson School Dean\'s Graduate Scholarship (2023–2024).',
+      'B.Tech., Computer Science (Networking & Security) - Vellore Institute of Technology (Jun 2019 – Jun 2023). Thesis: Email Spoofing (Advisor: Dr. S. C. Sethuraman). Received Dean\'s Research Excellence Award (2020).',
+    ],
+  },
+  {
+    id: 'voltron',
+    title: 'VOLTRON: Physical-Layer Authentication for USB Peripherals',
+    bullets: [
+      'Project period: Spring 2024 – Fall 2025',
+      'Research focus: Physical-layer fingerprinting using USB D+/D− electrical signals for device authentication',
+      'Key innovation: Identify devices from electrical-layer signals without modifying hardware, firmware, or OS',
+      'Features: Transients, FFT spectral signatures, envelope descriptors for robust device identification',
+      'Validation: Tested across 70+ commercial USB devices; robust to cable/port noise interference',
+      'Tags: Hardware Security, USB, Signal Processing, Machine Learning',
+      'Goal: Attest device identity at the physical layer for enhanced security without invasive modifications',
+    ],
+  },
+  {
+    id: 'agentic',
+    title: 'Agentic AI for Autonomous Robotics Control & Safety',
+    bullets: [
+      'Project period: Fall 2025 – Present',
+      'Research goal: Enable LLMs to reason, choose tools, and plan motion via ROS2 actions/topics',
+      'Architecture: Closed-loop control with state feedback and object-pose streams for self-correction',
+      'Key research: Benchmarked LLM planners vs MoveIt2; analyzed grounding and frame errors',
+      'Safety focus: Study how LLMs plan motion safely for autonomous robotic systems',
+      'Technologies: ROS2, Isaac Sim, MoveIt2, Safety frameworks',
+      'Impact: Bridging gap between language models and real-world robotic control with safety guardrails',
+    ],
+  },
+  {
+    id: 'vla',
+    title: 'Vision-Language-Action (VLA) for Grounded Manipulation',
+    bullets: [
+      'Project period: Fall 2025 – Present',
+      'Research goal: Fuse vision encoders (CLIP/ViT) with language reasoning for robotic control',
+      'Approach: Map high-level task descriptions to joint-space trajectories and gripper commands',
+      'Challenges addressed: Mitigate depth/ambiguity via data sampling and prompt conditioning',
+      'Architecture: RGB/depth encoder fusion with LLM reasoning for action generation',
+      'Technologies: OpenVLA, RT-2, PyTorch, CUDA for efficient inference',
+      'Application: Enabling robots to understand visual scenes and execute precise manipulation tasks from language instructions',
+    ],
+  },
+  {
+    id: 'secure-causal-broadcast',
+    title: 'Secure Causal Broadcast',
+    bullets: [
+      'Research focus: Distributed systems security with causal message ordering guarantees',
+      'Key concept: Ensuring messages are delivered in causally consistent order across distributed nodes',
+      'Security aspect: Preventing message reordering attacks and maintaining system integrity',
+      'Application: Critical for consistent state in distributed systems, blockchain networks, and replicated databases',
+      'Challenges: Balancing security, performance, and fault tolerance in message delivery',
+      'Relevance: Important for building trustworthy distributed systems with ordered guarantees',
+    ],
+  },
+  {
+    id: 'publications',
+    title: 'Research Publications',
+    bullets: [
+      'VOLTRON: Physical-Layer Fingerprinting for USB Device Authentication - USENIX Security (Rebuttal Stage), 2025. Status: Under review at top-tier venue.',
+      'A Comprehensive Examination of Email Spoofing: Issues and Prospects - Computers & Security, 2023. Published in peer-reviewed journal on email authentication vulnerabilities.',
+      'ANN Autoencoder for Insider Threat Detection - Future Internet, 2023. Published in MDPI on machine learning approaches to insider threat detection.',
+    ],
+  },
+  {
+    id: 'research-summary',
+    title: 'Research Summary & Expertise',
+    bullets: [
+      'Hardware Security: Physical-layer device authentication, USB security, signal processing for device fingerprinting',
+      'Agentic AI: LLM-based reasoning for robotic control, safety in autonomous systems, closed-loop planning and feedback',
+      'Vision-Language Models: Grounded manipulation, multi-modal learning, prompt engineering for robotic tasks',
+      'CPS Security: Cyber-physical systems fuzzing, device authentication, embedded security',
+      'Machine Learning: Deep learning, autoencoders, signal processing, feature extraction',
+      'Robotics: ROS2, motion planning, trajectory generation, real-time control systems',
+    ],
+  },
+  {
+    id: 'lab',
+    title: 'S3 Lab - Software & Systems Security',
+    bullets: [
+      'Laboratory: Software & Systems Security (S3 Lab) at University of Texas at Dallas',
+      'Focus: Security research across software, systems, and hardware layers',
+      'Website: https://www.s3lab.io/',
+      'Advisor: Prof. Chung Hwan Kim - Expert in systems security and binary analysis',
+      'Advisor profile: https://www.s3lab.io/profile/chungkim',
+    ],
+  },
+  {
+    id: 'awards-recognition',
+    title: 'Awards & Recognition',
+    bullets: [
+      'Jonsson School Dean\'s Graduate Scholarship (2023–2024) - Awarded by UT Dallas for academic excellence in graduate studies',
+      'Dean\'s Research Excellence Award (2020) - Awarded by Vellore Institute of Technology for research contributions',
+      'Google Scholar Profile: https://scholar.google.com/citations?user=fFFmw0UAAAAJ&hl=en',
+    ],
+  },
+]
