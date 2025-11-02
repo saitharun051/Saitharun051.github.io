@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react'
+import ReactDOM from 'react-dom'
 import { askAgent } from '../lib/agent'
 import { knowledge } from '../data/knowledge'
 import { ArrowUpRight, TerminalSquare, X, Send } from 'lucide-react'
@@ -9,7 +10,12 @@ export default function AgentPanel() {
   const [busy, setBusy] = useState(false)
   const [showModal, setShowModal] = useState(false)
   const [modalInput, setModalInput] = useState('')
+  const [modalRoot, setModalRoot] = useState(null)
   const messagesEndRef = useRef(null)
+  
+  useEffect(() => {
+    setModalRoot(document.getElementById('modal-root'))
+  }, [])
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' })
@@ -95,8 +101,8 @@ export default function AgentPanel() {
         </div>
       </div>
 
-      {showModal && (
-        <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-in fade-in duration-200">
+      {showModal && modalRoot && ReactDOM.createPortal(
+        <div className="fixed inset-0 z-[99999] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-in fade-in duration-200" style={{ position: 'fixed', zIndex: 99999 }}>
           <div className="bg-terminal-bg border-2 border-emerald-500 rounded-xl shadow-[0_0_30px_rgba(16,185,129,0.3)] max-w-4xl w-full max-h-[85vh] flex flex-col animate-in zoom-in-95 duration-200">
             <div className="flex items-center justify-between p-4 border-b border-emerald-500/30 bg-black/50">
               <div className="flex items-center gap-2 text-emerald-400">
@@ -179,7 +185,8 @@ export default function AgentPanel() {
               </div>
             </div>
           </div>
-        </div>
+        </div>,
+        modalRoot
       )}
     </>
   )
