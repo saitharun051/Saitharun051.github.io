@@ -47,7 +47,7 @@ export const sections = {
   ],
   research: [
     {
-      title: 'VOLTRON: Physical-Layer Authentication for USB Peripherals',
+      title: 'Fingerprinting USB Devices at Physical Layer',
       period: 'Spring 2024 – Fall 2025',
       tags: ['Hardware Security','USB','Signal Processing','ML'],
       bullets: [
@@ -78,11 +78,11 @@ export const sections = {
     },
   ],
   publications: [
-    {
-      title: 'VOLTRON: Physical-Layer Fingerprinting for USB Device Authentication',
-      venue: 'USENIX Security (Rebuttal Stage), 2025',
-      links: [{ label: 'PDF', href: 'https://drive.google.com/file/d/1TOYnGHR0yS5UgZ0e52u3eVO6qysTQyMk/view?usp=sharing' }],
-    },
+    // {
+    //   title: 'VOLTRON: Physical-Layer Fingerprinting for USB Device Authentication',
+    //   venue: 'USENIX Security (Rebuttal Stage), 2025',
+    //   links: [{ label: 'PDF', href: 'https://drive.google.com/file/d/1TOYnGHR0yS5UgZ0e52u3eVO6qysTQyMk/view?usp=sharing' }],
+    // },
     {
       title: 'A Comprehensive Examination of Email Spoofing: Issues and Prospects',
       venue: 'Computers & Security, 2023',

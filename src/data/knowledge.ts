@@ -22,7 +22,7 @@ export const knowledge = [
   },
   {
     id: 'voltron',
-    title: 'VOLTRON: Physical-Layer Authentication for USB Peripherals',
+    title: 'Fingerprinting USB Devices at Physical Layer',
     bullets: [
       'Project period: Spring 2024 – Fall 2025',
       'Research focus: Physical-layer fingerprinting using USB D+/D− electrical signals for device authentication',
@@ -75,7 +75,7 @@ export const knowledge = [
     id: 'publications',
     title: 'Research Publications',
     bullets: [
-      'VOLTRON: Physical-Layer Fingerprinting for USB Device Authentication - USENIX Security (Rebuttal Stage), 2025. Status: Under review at top-tier venue.',
+      // 'VOLTRON: Physical-Layer Fingerprinting for USB Device Authentication - USENIX Security (Rebuttal Stage), 2025. Status: Under review at top-tier venue.',
       'A Comprehensive Examination of Email Spoofing: Issues and Prospects - Computers & Security, 2023. Published in peer-reviewed journal on email authentication vulnerabilities.',
       'ANN Autoencoder for Insider Threat Detection - Future Internet, 2023. Published in MDPI on machine learning approaches to insider threat detection.',
     ],
