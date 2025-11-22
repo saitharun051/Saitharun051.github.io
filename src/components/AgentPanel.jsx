@@ -5,7 +5,7 @@ import { knowledge } from '../data/knowledge'
 import { ArrowUpRight, TerminalSquare, X, Send } from 'lucide-react'
 
 export default function AgentPanel() {
-  const [q, setQ] = useState('What is VOLTRON in one paragraph?')
+  const [q, setQ] = useState('Wheere did Tharun Study?')
   const [messages, setMessages] = useState([])
   const [busy, setBusy] = useState(false)
   const [showModal, setShowModal] = useState(false)
